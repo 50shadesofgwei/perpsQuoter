@@ -1,0 +1,14 @@
+README.md
+setup.py
+perpsQuoter.egg-info/PKG-INFO
+perpsQuoter.egg-info/SOURCES.txt
+perpsQuoter.egg-info/dependency_links.txt
+perpsQuoter.egg-info/requires.txt
+perpsQuoter.egg-info/top_level.txt
+utils/__init__.py
+utils/globalUtils.py
+utils/logger.py
+utils/marketDirectories/__init__.py
+utils/marketDirectories/gmxContractUtils.py
+utils/marketDirectories/gmxMarketDirectory.py
+utils/marketDirectories/synthetixMarketDirectory.py

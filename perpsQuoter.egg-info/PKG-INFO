@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: perpsQuoter
+Version: 0.0.1
+Summary: compare quotes for perps positions
+Home-page: https://github.com/50shadesofgwei/
+Author: zk50.eth
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: binance_futures_connector==4.0.0
+Requires-Dist: hexbytes==0.3.1
+Requires-Dist: pybit==5.6.2
+Requires-Dist: Pypubsub==4.0.3
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: synthetix>=0.1.13
+Requires-Dist: web3==6.16.0
+Requires-Dist: gmx_python_sdk@ git+https://github.com/50shadesofgwei/gmx_python_sdk_custom.git@main
+
+123
