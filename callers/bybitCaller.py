@@ -73,14 +73,24 @@ class ByBitQuoter:
                 symbol=full_symbol,
                 limit='1',
                 fundingInterval='1'
-            )
+            )['result']['list'][0]
             index_price = float(ticker_data['indexPrice'])
+
+            orderbook_data = self.client.get_orderbook(
+                category='linear',
+                symbol=full_symbol,
+                limit='200',
+            )
+
+            if orderbook_data and 'result' in orderbook_data:
+                asks = orderbook_data['result']['a']
+                bids = orderbook_data['result']['b']
             def get_long_quote(size):
-                long_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, True, size, index_price)
+                long_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, True, size, bids, index_price)
                 return long_quote
 
             def get_short_quote(size):
-                short_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, False, size, index_price)
+                short_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, False, size, asks, index_price)
                 return short_quote
 
             with concurrent.futures.ThreadPoolExecutor() as executor:
@@ -92,59 +102,40 @@ class ByBitQuoter:
                 'short': short_results
             }
 
-            with open(f'{symbol}_quotes.json', 'w') as f:
+            with open(f'quotes.json', 'w') as f:
                 json.dump(quotes, f, indent=4)
 
             return quotes
 
+
         except Exception as e:
-            logger.error(f"SynthetixCaller - An error occurred while executing a trade for {symbol}: {e}", exc_info=True)
+            logger.error(f"SynthetixCaller - An error occurred while fetching all quotes for {symbol}: {e}", exc_info=True)
             return None
 
     def get_quote_for_trade(
-        self, 
-        symbol: str, 
-        is_long: bool, 
-        trade_size_usd: float,
-        index_price: float = None
-        ) -> float:
+            self, 
+            symbol: str, 
+            is_long: bool, 
+            trade_size_usd: float,
+            orders: list,
+            index_price: float,
+            ) -> float:
 
         try:
-            full_symbol = symbol + 'USDT'
-            trade_size_in_asset = get_asset_amount_for_given_dollar_amount(symbol, trade_size_usd)
-            qty_step_raw = self.get_qty_step(full_symbol)
-            qty_step = normalize_qty_step(qty_step_raw)
-            truncated_value = str(f"{trade_size_in_asset:.{qty_step}f}")
+            trade_size_in_asset = trade_size_usd / index_price
+            average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+            fees: float = get_fees(trade_size_usd)
 
-            orderbook_data = self.client.get_orderbook(
-                category='linear',
-                symbol=full_symbol,
-                limit='10',
+            response_data = self.build_response_object(
+                symbol,
+                average_price,
+                index_price,
+                trade_size_usd,
+                is_long,
+                fees
             )
 
-            with open(f'prices.json', 'w') as f:
-                json.dump(orderbook_data, f, indent=4)
-
-            if orderbook_data and 'result' in orderbook_data and 'list' in orderbook_data['result']:
-                ticker_data = orderbook_data['result']['list'][0] 
-
-
-                fees: float = get_fees(trade_size_usd)
-
-                # response_data = self.build_response_object(
-                #     symbol,
-                #     execution_price,
-                #     index_price,
-                #     trade_size_usd,
-                #     is_long,
-                #     fees
-                # )
-
-                return orderbook_data
-
-            else:
-                logger.error(f"GMXCaller - No valid ticker data found for {symbol}")
-                return None
+            return response_data
 
         except Exception as e:
             logger.error(f"GMXCaller - An error occurred while fetching a quote for symbol {symbol}, trade size {trade_size_usd}: {e}", exc_info=True)
@@ -204,9 +195,5 @@ class ByBitQuoter:
             return None
 
 x = ByBitQuoter()
-y = x.get_quote_for_trade(
-    'BTC',
-    True,
-    500000
-)
+y = x.get_all_quotes_for_symbol('BTC')
 print(y)

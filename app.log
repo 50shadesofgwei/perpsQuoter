@@ -11087,3 +11087,135 @@ web3.exceptions.ContractCustomError: ('0x8af0d140fffffffffffffffffffffffffffffff
 2024-10-18 13:17:08,249 - utils.logger - ERROR - GMXCaller - No valid ticker data found for BTC
 2024-10-18 13:19:31,574 - utils.logger - ERROR - GMXCaller - No valid ticker data found for BTC
 2024-10-18 13:23:21,783 - utils.logger - ERROR - GMXCaller - No valid ticker data found for BTC
+2024-10-18 13:50:59,992 - utils.logger - ERROR - SynthetixCaller - An error occurred while executing a trade for BTC: 'indexPrice'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 77, in get_all_quotes_for_symbol
+    index_price = float(ticker_data['indexPrice'])
+                        ~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'indexPrice'
+2024-10-18 13:57:11,773 - utils.logger - ERROR - SynthetixCaller - An error occurred while fetching all quotes for BTC: 'list'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 71, in get_all_quotes_for_symbol
+    ticker_data = self.client.get_tickers(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'list'
+2024-10-18 13:58:39,038 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 5000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 122, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 13:58:39,038 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 10000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 122, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 13:58:39,039 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 25000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 122, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 13:58:39,039 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 50000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 122, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 13:58:39,048 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 5000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 122, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 13:58:39,048 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 10000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 122, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 13:58:39,049 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 25000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 122, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 13:58:39,049 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 50000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 122, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 14:50:07,421 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 5000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 126, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 14:50:07,424 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 10000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 126, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 14:50:07,425 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 25000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 126, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 14:50:07,425 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 50000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 126, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 14:50:07,432 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 10000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 126, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 14:50:07,433 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 25000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 126, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order
+2024-10-18 14:50:07,434 - utils.logger - ERROR - GMXCaller - An error occurred while fetching a quote for symbol BTC, trade size 50000000: Insufficient liquidity to fill the order
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/bybitCaller.py", line 126, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 119, in calculate_average_entry_price
+    raise ValueError("Insufficient liquidity to fill the order")
+ValueError: Insufficient liquidity to fill the order

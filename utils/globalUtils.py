@@ -96,11 +96,13 @@ def get_dollar_amount_for_given_asset_amount(asset: str, asset_amount: float) ->
         return dollar_amount
     except Exception as e:
         logger.error(f"GlobalUtils - Error converting asset amount to dollar amount for {asset}: {e}")
-    return 0.0
+        return 0.0
 
-def calculate_average_entry_price(orders: list, trade_size_in_asset: float) -> float:
+def calculate_average_entry_price(orders: list, is_long: bool, trade_size_in_asset: float) -> float:
     total_cost = 0.0
     total_filled = 0.0
+    if is_long:
+        orders.sort(key=lambda x: float(x[0]))
 
     for price_str, size_str in orders:
         price = float(price_str)
@@ -118,6 +120,5 @@ def calculate_average_entry_price(orders: list, trade_size_in_asset: float) -> f
     if total_filled < trade_size_in_asset:
         raise ValueError("Insufficient liquidity to fill the order")
 
-    # Calculate the average price paid per asset
     average_price = total_cost / total_filled
     return average_price

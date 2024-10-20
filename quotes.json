@@ -1,0 +1,123 @@
+{
+    "long": [
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Long",
+            "trade_size": 100,
+            "index_price": 68605.13,
+            "fill_price": 68569.6,
+            "fees": 0.055
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Long",
+            "trade_size": 10000,
+            "index_price": 68605.13,
+            "fill_price": 68569.6,
+            "fees": 5.5
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Long",
+            "trade_size": 100000,
+            "index_price": 68605.13,
+            "fill_price": 68569.6,
+            "fees": 55.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Long",
+            "trade_size": 500000,
+            "index_price": 68605.13,
+            "fill_price": 68566.98658293248,
+            "fees": 275.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Long",
+            "trade_size": 1000000,
+            "index_price": 68605.13,
+            "fill_price": 68565.59053075674,
+            "fees": 550.0
+        },
+        null,
+        null,
+        null,
+        null
+    ],
+    "short": [
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Short",
+            "trade_size": 100,
+            "index_price": 68605.13,
+            "fill_price": 68569.7,
+            "fees": 0.055
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Short",
+            "trade_size": 10000,
+            "index_price": 68605.13,
+            "fill_price": 68569.7,
+            "fees": 5.5
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Short",
+            "trade_size": 100000,
+            "index_price": 68605.13,
+            "fill_price": 68569.7,
+            "fees": 55.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Short",
+            "trade_size": 500000,
+            "index_price": 68605.13,
+            "fill_price": 68569.7,
+            "fees": 275.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Short",
+            "trade_size": 1000000,
+            "index_price": 68605.13,
+            "fill_price": 68569.7,
+            "fees": 550.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "BTC",
+            "timestamp": "2024-10-18 14:50:07",
+            "side": "Short",
+            "trade_size": 5000000,
+            "index_price": 68605.13,
+            "fill_price": 68578.95869893456,
+            "fees": 2750.0
+        },
+        null,
+        null,
+        null
+    ]
+}
