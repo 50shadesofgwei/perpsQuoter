@@ -1,20 +1,20 @@
-from clients.bybit import *
-from pubsub import pub
+from utils.logger import *
+from utils.globalUtils import *
 import os
 import time
 from dotenv import load_dotenv
-from utils.globalUtils import *
-from utils.logger import logger
+from clients.binanceClient import GLOBAL_BINANCE_CLIENT
 import concurrent.futures
-from callers.bybitCallerUtils import *
 import json
+from callers.binanceCallerUtils import *
 
-class ByBitQuoter:
+
+class BinanceQuoter:
     
     def __init__(self):
-        self.client = GLOBAL_BYBIT_CLIENT
-        self.api_key = os.getenv('BYBIT_API_KEY')
-        self.api_secret = os.getenv('BYBIT_API_SECRET')
+        self.client = GLOBAL_BINANCE_CLIENT
+        self.api_key = os.getenv('BINANCE_API_KEY')
+        self.api_secret = os.getenv('BINANCE_API_SECRET')
         self.MAX_RETRIES = 5  
         self.BACKOFF_FACTOR = 0.5
 
@@ -35,15 +35,13 @@ class ByBitQuoter:
                     logger.error(f"Error occurred: {e}")
                     raise  
 
-        logger.error(f"GMXCaller - Failed after {self.MAX_RETRIES} retries.")
+        logger.error(f"BinanceCaller - Failed after {self.MAX_RETRIES} retries.")
         return None
 
     def get_quotes_for_all_symbols(self) -> dict:
         try:
             all_quotes = []
-            all_symbols = []
-
-
+            all_symbols = BINANCE_TOKEN_LIST
 
             def process_symbol(symbol):
                 return self.get_all_quotes_for_symbol(symbol)
@@ -54,11 +52,14 @@ class ByBitQuoter:
             for quotes in results:
                 if quotes:
                     all_quotes.append(quotes)
+            
+            with open(f'quotes.json', 'w') as f:
+                json.dump(all_quotes, f, indent=4)
 
             return all_quotes
 
         except Exception as e:
-            logger.error(f"SynthetixCaller - An error occurred while processing symbols: {e}", exc_info=True)
+            logger.error(f"BinanceCaller - An error occurred while processing symbols: {e}", exc_info=True)
             return None
 
     def get_all_quotes_for_symbol(
@@ -67,30 +68,30 @@ class ByBitQuoter:
         ) -> dict:
 
         try:
+            
             full_symbol = symbol + 'USDT'
-            ticker_data = self.client.get_tickers(
-                category='linear',
-                symbol=full_symbol,
-                limit='1',
-                fundingInterval='1'
-            )['result']['list'][0]
-            index_price = float(ticker_data['indexPrice'])
+            if symbol == 'ETHBTC':
+                full_symbol = symbol
+            
 
-            orderbook_data = self.client.get_orderbook(
-                category='linear',
+            orderbook_data = self.client.depth(
                 symbol=full_symbol,
-                limit='200',
+                limit='500',
             )
+            
+            
+            index_price = float(self.client.mark_price(full_symbol)['indexPrice'])
 
-            if orderbook_data and 'result' in orderbook_data:
-                asks = orderbook_data['result']['a']
-                bids = orderbook_data['result']['b']
+            if orderbook_data:
+                asks = orderbook_data['asks']
+                bids = orderbook_data['bids']
+
             def get_long_quote(size):
-                long_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, True, size, bids, index_price)
+                long_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, True, size, asks, index_price)
                 return long_quote
 
             def get_short_quote(size):
-                short_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, False, size, asks, index_price)
+                short_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, False, size, bids, index_price)
                 return short_quote
 
             with concurrent.futures.ThreadPoolExecutor() as executor:
@@ -102,14 +103,11 @@ class ByBitQuoter:
                 'short': short_results
             }
 
-            with open(f'quotes.json', 'w') as f:
-                json.dump(quotes, f, indent=4)
-
             return quotes
 
 
         except Exception as e:
-            logger.error(f"SynthetixCaller - An error occurred while fetching all quotes for {symbol}: {e}", exc_info=True)
+            logger.error(f"BinanceCaller - An error occurred while fetching all quotes for {symbol}: {e}", exc_info=True)
             return None
 
     def get_quote_for_trade(
@@ -123,7 +121,7 @@ class ByBitQuoter:
 
         try:
             trade_size_in_asset = trade_size_usd / index_price
-            average_price = calculate_average_entry_price(orders, trade_size_in_asset)
+            average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
             fees: float = get_fees(trade_size_usd)
 
             response_data = self.build_response_object(
@@ -138,7 +136,7 @@ class ByBitQuoter:
             return response_data
 
         except Exception as e:
-            logger.error(f"GMXCaller - An error occurred while fetching a quote for symbol {symbol}, trade size {trade_size_usd}: {e}", exc_info=True)
+            logger.error(f"BinanceCaller - An error occurred while fetching a quote for symbol {symbol}, trade size {trade_size_usd}: {e}", exc_info=True)
             return None
 
     
@@ -156,8 +154,36 @@ class ByBitQuoter:
             timestamp = get_timestamp()
             side = get_side_for_is_long(is_long)
 
+            if symbol == '1000BONK':
+                if execution_price == None:
+                    execution_price = 1
+                execution_price = execution_price / 1000
+                index_price = index_price / 1000
+                symbol = 'BONK'
+                if execution_price == 1:
+                    execution_price = 0
+            
+            if symbol == '1000PEPE':
+                if execution_price == None:
+                    execution_price = 1
+                execution_price = execution_price / 1000
+                index_price = index_price / 1000
+                symbol = 'PEPE'
+                if execution_price == 1:
+                    execution_price = 0
+            
+            if symbol == '1000SHIB':
+                if execution_price == None:
+                    execution_price = 1
+                execution_price = execution_price / 1000
+                index_price = index_price / 1000
+                symbol = 'SHIB'
+                if execution_price == 1:
+                    execution_price = 0
+
+
             api_response = {
-                'exchange': 'ByBit',
+                'exchange': 'Binance',
                 'symbol': symbol,
                 'timestamp': timestamp,
                 'side': side,
@@ -170,30 +196,8 @@ class ByBitQuoter:
             return api_response
         
         except Exception as e:
-            logger.error(f"SynthetixCaller - An error occurred while fetching quote data for {symbol}: {e}", exc_info=True)
+            logger.error(f"BinanceCaller - An error occurred while fetching quote data for {symbol}: {e}", exc_info=True)
             return None
 
-    def get_qty_step(self, symbol: str) -> float:
-        try:
-            response = self.client.get_instruments_info(
-                category='linear',
-                symbol=symbol
-            )
-
-            instruments = response.get('result', {}).get('list', [])
-            if not instruments:
-                return None
-            
-            qty_step_str = instruments[0].get('lotSizeFilter', {}).get('qtyStep', None)
-
-            if qty_step_str is not None:
-                return float(qty_step_str)
-            else:
-                return None
-        except Exception as e:
-            logger.error(f'ByBitPositionController - Error while retrieving qtyStep for symbol {symbol}. Error: {e}')
-            return None
-
-x = ByBitQuoter()
-y = x.get_all_quotes_for_symbol('BTC')
-print(y)
+x = BinanceQuoter()
+y = x.get_quotes_for_all_symbols()

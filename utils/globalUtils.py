@@ -118,7 +118,15 @@ def calculate_average_entry_price(orders: list, is_long: bool, trade_size_in_ass
             total_filled += size
 
     if total_filled < trade_size_in_asset:
-        raise ValueError("Insufficient liquidity to fill the order")
+        return 0
 
     average_price = total_cost / total_filled
     return average_price
+
+BYBIT_TOKEN_LIST = [
+    'BTC','ETH','SNX','SOL','W','WIF','ARB','AVAX','BNB','1000BONK','DOGE','ENA','FTM','POL','OP','ORDI','1000PEPE','RUNE','ARKM','AXL','BOME','ETHFI','GALA','GMX','INJ','LINK','PENDLE','STX','SUI','TAO','TIA','TON','AAVE','ADA','ALGO','APT','ATOM','AXS','BAL','BCH','BLUR','COMP','CRV','DOT','DYDX','EOS','ETC','ETHBTC','FIL','FLOW','FXS','GRT','ICP','IMX','JTO','JUP','LDO','LTC','MEME','NEAR','PYTH','SEI','SHIB1000','STRK','SUSHI','TRX','UNI','XLM','XRP','YFI','EIGEN','IO','MEW','MKR','NOT','PEOPLE','POL','POPCAT','RENDER','SATS','WLD','ZRO'
+]
+
+BINANCE_TOKEN_LIST = [
+     'BTC','ETH','SNX','SOL','W','WIF','ARB','AVAX','BNB','1000BONK','DOGE','ENA','FTM','POL','OP','ORDI','1000PEPE','RUNE','ARKM','AXL','BOME','ETHFI','GALA','GMX','INJ','LINK','PENDLE','STX','SUI','TAO','TIA','TON','AAVE','ADA','ALGO','APT','ATOM','AXS','BAL','BCH','BLUR','COMP','CRV','DOT','DYDX','EOS','ETC','ETHBTC','FIL','FLOW','FXS','GRT','ICP','IMX','JTO','JUP','LDO','LTC','MEME','NEAR','PYTH','SEI','1000SHIB','STRK','SUSHI','TRX','UNI','XLM','XRP','YFI','EIGEN','IO','MEW','MKR','NOT','PEOPLE','POL','POPCAT','RENDER','1000SATS','WLD','ZRO'
+]

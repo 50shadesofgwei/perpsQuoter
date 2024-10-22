@@ -8,7 +8,7 @@ from gmx_python_sdk.scripts.v2.gmx_utils import get_execution_price_and_price_im
 from gmx_python_sdk.scripts.v2.get.get import OraclePrices
 from gmx_python_sdk.scripts.v2.get.get_open_interest import OpenInterest
 from clients.gmxClient import ARBITRUM_CONFIG_OBJECT
-from callers.gmxCallerUtils import *
+from callers.GMX.gmxCallerUtils import *
 
 class GMXQuoter:
     def __init__(self):
