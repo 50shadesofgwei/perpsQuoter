@@ -2,3 +2,5 @@
 config.yaml
 /venv
 app.log
+perpsQuoter.egg-info
+config.json

@@ -1,4 +1,4 @@
-from clients.synthetixClient import GLOBAL_SYNTHETIX_CLIENT
+from clients.synthetixClient import GLOBAL_SYNTHETIX_V3_CLIENT
 from utils.logger import logger
 from datetime import datetime
 
@@ -63,7 +63,7 @@ def adjust_size_for_is_long(trade_size_usd: float, is_long: bool) -> float:
 
 def get_price_from_pyth(symbol: str):
     try:
-        response = GLOBAL_SYNTHETIX_CLIENT.pyth.get_price_from_symbols([symbol])
+        response = GLOBAL_SYNTHETIX_V3_CLIENT.pyth.get_price_from_symbols([symbol])
         
         feed_id = next(iter(response['meta']))
         meta_data = response['meta'].get(feed_id, {})
@@ -129,4 +129,8 @@ BYBIT_TOKEN_LIST = [
 
 BINANCE_TOKEN_LIST = [
      'BTC','ETH','SNX','SOL','W','WIF','ARB','AVAX','BNB','1000BONK','DOGE','ENA','FTM','POL','OP','ORDI','1000PEPE','RUNE','ARKM','AXL','BOME','ETHFI','GALA','GMX','INJ','LINK','PENDLE','STX','SUI','TAO','TIA','TON','AAVE','ADA','ALGO','APT','ATOM','AXS','BAL','BCH','BLUR','COMP','CRV','DOT','DYDX','EOS','ETC','ETHBTC','FIL','FLOW','FXS','GRT','ICP','IMX','JTO','JUP','LDO','LTC','MEME','NEAR','PYTH','SEI','1000SHIB','STRK','SUSHI','TRX','UNI','XLM','XRP','YFI','EIGEN','IO','MEW','MKR','NOT','PEOPLE','POL','POPCAT','RENDER','1000SATS','WLD','ZRO'
+]
+
+HYPERLIQUID_TOKEN_LIST = [
+    "BTC", "ETH", "SNX", "SOL", "W", "WIF", "ARB", "AVAX", "BNB", "DOGE", "ENA", "FTM", "OP", "ORDI", "RUNE", "GMX", "INJ", "LINK", "PENDLE", "STX", "SUI", "TAO", "TIA", "TON", "AAVE", "ADA", "APT", "ATOM", "BCH", "CRV", "DOT", "DYDX", "ETC", "FIL", "FXS", "LDO", "LTC", "NEAR", "SEI", "STRK", "SUSHI", "TRX", "UNI", "XRP"
 ]

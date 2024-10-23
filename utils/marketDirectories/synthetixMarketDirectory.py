@@ -2,7 +2,7 @@ from web3 import *
 from dotenv import load_dotenv
 from utils.logger import logger
 import json
-from clients.synthetixClient import GLOBAL_SYNTHETIX_CLIENT
+from clients.synthetixClient import GLOBAL_SYNTHETIX_V3_CLIENT
 
 load_dotenv()
 
@@ -46,7 +46,7 @@ class SynthetixMarketDirectory:
 
     @classmethod
     def update_all_market_parameters(cls):
-        client = GLOBAL_SYNTHETIX_CLIENT
+        client = GLOBAL_SYNTHETIX_V3_CLIENT
         market_data_response = client.perps.markets_by_name
         for symbol, market_data in market_data_response.items():
             cls.update_market_member(market_data)
@@ -211,7 +211,7 @@ class SynthetixMarketDirectory:
     def get_skew_usd(cls, symbol: str) -> float:
         try:
             market_id = cls.get_market_id(symbol)
-            market_data = GLOBAL_SYNTHETIX_CLIENT.perps.get_market_summary(market_id)
+            market_data = GLOBAL_SYNTHETIX_V3_CLIENT.perps.get_market_summary(market_id)
             index_price = float(market_data['index_price'])
             skew_in_asset = market_data['skew']
             skew_usd = skew_in_asset * index_price

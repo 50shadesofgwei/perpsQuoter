@@ -2,14 +2,14 @@ from synthetix import *
 from utils.logger import logger
 from utils.marketDirectories.synthetixMarketDirectory import SynthetixMarketDirectory
 from utils.globalUtils import *
-from clients.synthetixClient import GLOBAL_SYNTHETIX_CLIENT
+from clients.synthetixClient import GLOBAL_SYNTHETIX_V3_CLIENT
 import time
 import json
 import concurrent.futures
 
-class SynthetixPositionController:
+class SynthetixV3Quoter:
     def __init__(self):
-        self.client = GLOBAL_SYNTHETIX_CLIENT
+        self.client = GLOBAL_SYNTHETIX_V3_CLIENT
         self.MAX_RETRIES = 5  
         self.BACKOFF_FACTOR = 0.5
     
@@ -72,9 +72,6 @@ class SynthetixPositionController:
                 'short': short_results
             }
 
-            with open(f'{symbol}_quotes.json', 'w') as f:
-                json.dump(quotes, f, indent=4)
-
             return quotes
 
         except Exception as e:
@@ -120,5 +117,10 @@ class SynthetixPositionController:
             return None
 
 SynthetixMarketDirectory.initialize()
-x = SynthetixPositionController()
-y = x.get_quotes_for_all_symbols()
+x = SynthetixV3Quoter()
+y = x.get_quote_for_trade(
+    'BTC',
+    True,
+    100000
+)
+print(y)

@@ -13577,3 +13577,1135 @@ UnboundLocalError: cannot access local variable 'full_symbol' where it is not as
 2024-10-22 13:57:12,416 - utils.logger - ERROR - GlobalUtils - Insufficient liquidity on the orderbook for trade size 27389197.34450776: Returning None.
 2024-10-22 13:57:12,417 - utils.logger - ERROR - GlobalUtils - Insufficient liquidity on the orderbook for trade size 68472993.3612694: Returning None.
 2024-10-22 13:57:12,418 - utils.logger - ERROR - GlobalUtils - Insufficient liquidity on the orderbook for trade size 136945986.7225388: Returning None.
+2024-10-22 16:15:37,273 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 16:17:49,679 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 16:25:33,958 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 16:27:58,512 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 16:33:03,230 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 16:33:03,714 - utils.logger - ERROR - SynthetixMarketDirectory - Market symbol 'BTC' not found in MarketDirectory.
+2024-10-22 16:33:03,714 - utils.logger - ERROR - SynthetixCaller - An error occurred while executing a trade for BTC: Must provide a market_id or market_name
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV3Caller.py", line 89, in get_quote_for_trade
+    quote_dict = self.client.perps.get_quote(size=adjusted_trade_size_in_asset, market_id=market_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/synthetix/perps/perps.py", line 864, in get_quote
+    market_id, market_name = self._resolve_market(market_id, market_name)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/synthetix/perps/perps.py", line 29, in _resolve_market
+    raise ValueError("Must provide a market_id or market_name")
+ValueError: Must provide a market_id or market_name
+2024-10-22 16:34:02,328 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 16:34:02,504 - utils.logger - INFO - SynthetixMarketDirectory - Markets Initialized
+2024-10-22 17:15:17,447 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 17:15:18,833 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:15:18,836 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:15:18,907 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:15:18,970 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:15:18,974 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:15:18,976 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:15:18,979 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:15:18,981 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:15:19,165 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:15:19,167 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:15:19,168 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:15:19,172 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:15:19,169 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:15:19,176 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:15:19,178 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:15:19,181 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:15:19,183 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:15:19,185 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 106, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:18:35,035 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 17:18:36,225 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:18:36,227 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:18:36,293 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:18:36,298 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:18:36,317 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:18:36,319 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:18:36,517 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:18:36,524 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:18:36,531 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 105, in calculate_average_entry_price
+    orders.sort(key=lambda x: float(x[0]))
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:18:36,534 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:18:36,534 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:18:36,536 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:18:36,537 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:18:36,535 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:18:36,550 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:18:36,551 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:18:36,554 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:18:36,556 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: could not convert string to float: 'p'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/globalUtils.py", line 108, in calculate_average_entry_price
+    price = float(price_str)
+            ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'p'
+2024-10-22 17:27:37,913 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 17:27:39,350 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,352 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,397 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,400 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,405 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,438 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,651 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,661 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,683 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,685 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,686 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,687 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,688 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,691 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,692 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,693 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,695 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:27:39,697 - utils.logger - ERROR - HyperiquidCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 109, in get_quote_for_trade
+    average_price = calculate_average_entry_price_hyperliquid(orders, is_long, trade_size_in_asset)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCallerUtils.py", line 15, in calculate_average_entry_price_hyperliquid
+    orders.sort(key=lambda x: float(x["px"]), reverse=not is_long)
+    ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'sort'
+2024-10-22 17:29:06,155 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 17:31:17,793 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 17:34:36,598 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 17:37:01,183 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-22 17:37:05,984 - utils.logger - ERROR - HyperiquidCaller - An error occurred while processing symbols: 'ARKM'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 45, in get_quotes_for_all_symbols
+    results = list(executor.map(process_symbol, HYPERLIQUID_TOKEN_LIST))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/hyperliquidCaller.py", line 41, in process_symbol
+    index_price = self.client.all_mids()[symbol]
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'ARKM'
+2024-10-22 17:40:32,215 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 36, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 13:22:06,588 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 13:24:39,357 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 13:29:18,883 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 13:47:31,865 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 13:50:11,850 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 13:52:34,510 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 16:50:55,439 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 16:50:56,461 - utils.logger - ERROR - SynthetixV2MarketDirectory - Failed to build market directory. Error: cannot access local variable 'symbol' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/utils/marketDirectories/synthetixV2MarketDirectory.py", line 53, in update_all_market_parameters
+    cls.contract_interfaces = cls.create_contract_interfaces(processed_data, web3)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/marketDirectories/synthetixV2MarketDirectory.py", line 64, in create_contract_interfaces
+    if symbol == 'sBTC':
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'symbol' where it is not associated with a value
+2024-10-23 16:50:56,462 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 16:50:56,462 - utils.logger - ERROR - SynthetixV2MarketDirectory - Failed to find corresponding contract for symbol BTC: Error: 'BTC'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/utils/marketDirectories/synthetixV2MarketDirectory.py", line 91, in get_contract_object_for_symbol
+    contract_interface = cls.contract_interfaces[symbol]
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'BTC'
+2024-10-23 16:50:56,463 - utils.logger - ERROR - SynthetixCaller - An error occurred while executing a trade for BTC: 'list' object has no attribute 'functions'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 99, in get_quote_for_trade
+    quote = contract.functions.fillPrice(size_delta).call()
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'functions'
+2024-10-23 16:52:55,848 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 16:52:56,803 - utils.logger - ERROR - SynthetixV2MarketDirectory - Failed to build market directory. Error: type object 'Web3' has no attribute 'toChecksumAddress'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/utils/marketDirectories/synthetixV2MarketDirectory.py", line 53, in update_all_market_parameters
+    cls.contract_interfaces = cls.create_contract_interfaces(processed_data, web3)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/utils/marketDirectories/synthetixV2MarketDirectory.py", line 69, in create_contract_interfaces
+    contract = w3.eth.contract(address=Web3.toChecksumAddress(data['market_address']), abi=abi)
+                                       ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Web3' has no attribute 'toChecksumAddress'. Did you mean: 'to_checksum_address'?
+2024-10-23 16:52:56,806 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 16:52:56,806 - utils.logger - ERROR - SynthetixV2MarketDirectory - Failed to find corresponding contract for symbol BTC: Error: 'BTC'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/utils/marketDirectories/synthetixV2MarketDirectory.py", line 91, in get_contract_object_for_symbol
+    contract_interface = cls.contract_interfaces[symbol]
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'BTC'
+2024-10-23 16:52:56,806 - utils.logger - ERROR - SynthetixCaller - An error occurred while executing a trade for BTC: 'list' object has no attribute 'functions'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 99, in get_quote_for_trade
+    quote = contract.functions.fillPrice(size_delta).call()
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'functions'
+2024-10-23 16:58:54,707 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 16:58:56,505 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 16:58:56,505 - utils.logger - ERROR - SynthetixCaller - An error occurred while executing a trade for BTC: 'dict' object has no attribute 'functions'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 99, in get_quote_for_trade
+    quote = contract.functions.fillPrice(size_delta).call()
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'functions'
+2024-10-23 17:02:38,698 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 17:02:40,616 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 17:02:40,616 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching a quote for BTC: ("The function 'fillPrice' was not found in this contract's abi.", ' Are you sure you provided the correct contract abi?')
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 99, in get_quote_for_trade
+    quote = contract.functions.fillPrice(size_delta).call()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/contract/contract.py", line 421, in __getattr__
+    raise ABIFunctionNotFound(
+web3.exceptions.ABIFunctionNotFound: ("The function 'fillPrice' was not found in this contract's abi.", ' Are you sure you provided the correct contract abi?')
+2024-10-23 17:10:19,256 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 17:10:22,594 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 17:10:22,594 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching a quote for BTC: ("The function 'fillPrice' was not found in this contract's abi.", ' Are you sure you provided the correct contract abi?')
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 99, in get_quote_for_trade
+    quote = contract.functions.fillPrice(size_delta).call()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/contract/contract.py", line 421, in __getattr__
+    raise ABIFunctionNotFound(
+web3.exceptions.ABIFunctionNotFound: ("The function 'fillPrice' was not found in this contract's abi.", ' Are you sure you provided the correct contract abi?')
+2024-10-23 17:18:36,373 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 17:18:37,906 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 17:18:37,909 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching a quote for BTC: 
+Could not identify the intended function with name `fillPrice`, positional arguments with type(s) `float` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `fillPrice`: ['fillPrice(int256)']
+Function invocation failed due to no matching argument types.
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 99, in get_quote_for_trade
+    quote = contract.functions.fillPrice(size_delta).call()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/contract/contract.py", line 260, in __call__
+    clone._set_function_info()
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/contract/base_contract.py", line 476, in _set_function_info
+    self.abi = find_matching_fn_abi(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/_utils/contracts.py", line 208, in find_matching_fn_abi
+    raise Web3ValidationError(message)
+web3.exceptions.Web3ValidationError: 
+Could not identify the intended function with name `fillPrice`, positional arguments with type(s) `float` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `fillPrice`: ['fillPrice(int256)']
+Function invocation failed due to no matching argument types.
+2024-10-23 17:20:34,848 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 17:20:36,782 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 17:25:06,794 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 17:25:08,171 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 17:25:08,815 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:08,830 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:08,832 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:08,844 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:08,849 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:08,854 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:08,856 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:08,861 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,037 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,279 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,290 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,291 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,303 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,318 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,341 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,356 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,359 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:25:09,500 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while fetching quote data for BTC: 'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 114, in build_response_object
+    index_price = float(quote['index_price'])
+                        ~~~~~^^^^^^^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+2024-10-23 17:34:49,224 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 17:34:50,783 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 17:34:51,493 - utils.logger - ERROR - SynthetixV2Caller - An error occurred while executing a trade for BTC: SynthetixV2Quoter.build_response_object() missing 1 required positional argument: 'is_long'
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 71, in get_all_quotes_for_symbol
+    long_results = list(executor.map(get_long_quote, TARGET_TRADE_SIZES))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/callers/Synthetix/synthetixV2Caller.py", line 64, in get_long_quote
+    return self.build_response_object(symbol, long_quote, size, True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SynthetixV2Quoter.build_response_object() missing 1 required positional argument: 'is_long'
+2024-10-23 17:38:53,633 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 17:38:54,918 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 17:51:06,125 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 17:51:09,593 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-23 18:11:24,715 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-23 18:11:26,349 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
