@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from clients.binanceClient import GLOBAL_BINANCE_CLIENT
 import concurrent.futures
 import json
-from callers.binanceCallerUtils import *
+from callers.Binance.binanceCallerUtils import *
 
 
 class BinanceQuoter:
@@ -81,6 +81,7 @@ class BinanceQuoter:
             
             
             index_price = float(self.client.mark_price(full_symbol)['indexPrice'])
+            depth = tally_orderbook(orderbook_data, index_price)
 
             if orderbook_data:
                 asks = orderbook_data['asks']
@@ -100,7 +101,8 @@ class BinanceQuoter:
 
             quotes = {
                 'long': long_results,
-                'short': short_results
+                'short': short_results,
+                'depth': depth
             }
 
             return quotes
@@ -200,4 +202,10 @@ class BinanceQuoter:
             return None
 
 x = BinanceQuoter()
-y = x.get_quotes_for_all_symbols()
+orderbook_data = x.client.depth(
+    symbol='BTCUSDT',
+    limit='5',
+)
+
+with open('BinanceOrderbook6969696.json', 'w') as f:
+    json.dump(orderbook_data, f, indent=4)

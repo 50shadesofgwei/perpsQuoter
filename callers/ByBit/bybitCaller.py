@@ -80,6 +80,8 @@ class ByBitQuoter:
                 limit='200',
             )
 
+            depth_dict = tally_orderbook(orderbook_data, index_price)
+
             if orderbook_data and 'result' in orderbook_data:
                 asks = orderbook_data['result']['a']
                 bids = orderbook_data['result']['b']
@@ -97,7 +99,8 @@ class ByBitQuoter:
 
             quotes = {
                 'long': long_results,
-                'short': short_results
+                'short': short_results,
+                'depth': depth_dict
             }
 
             with open(f'quotes.json', 'w') as f:
@@ -138,7 +141,6 @@ class ByBitQuoter:
         except Exception as e:
             logger.error(f"ByBitCaller - An error occurred while fetching a quote for symbol {symbol}, trade size {trade_size_usd}: {e}", exc_info=True)
             return None
-
     
     def build_response_object(
         self, 
@@ -210,6 +212,3 @@ class ByBitQuoter:
         except Exception as e:
             logger.error(f'ByBitCaller - Error while retrieving qtyStep for symbol {symbol}. Error: {e}')
             return None
-
-x = ByBitQuoter()
-y = x.get_all_quotes_for_symbol('BTC')

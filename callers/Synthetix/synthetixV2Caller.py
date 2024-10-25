@@ -118,6 +118,27 @@ class SynthetixV2Quoter:
         except Exception as e:
             logger.error(f"SynthetixV2Caller - An error occurred while fetching a quote for {symbol}: {e}", exc_info=True)
             return None
+
+    def get_max_market_value(self, symbol: str) -> dict:
+        try:
+            contract = SynthetixV2MarketDirectory.get_contract_object_for_symbol(symbol)
+            
+        
+            # return all_quotes
+
+        except Exception as e:
+            logger.error(f"SynthetixV2Caller - An error occurred while fetching market depth for asset {symbol}: {e}", exc_info=True)
+            return None
+
+    def get_market_depth(self, symbol: str) -> dict:
+        try:
+            market_depth = self.client
+        
+            # return all_quotes
+
+        except Exception as e:
+            logger.error(f"SynthetixV2Caller - An error occurred while fetching market depth for asset {symbol}: {e}", exc_info=True)
+            return None
     
     def build_response_object(
         self, 
@@ -154,3 +175,6 @@ x = SynthetixV2Quoter()
 y = x.get_all_quotes_for_symbol(
     'BTC'
 )
+
+contract = x.client.get_market_contract('sBTC')
+print(contract)

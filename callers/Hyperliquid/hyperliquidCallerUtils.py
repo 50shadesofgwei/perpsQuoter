@@ -32,3 +32,15 @@ def calculate_average_entry_price_hyperliquid(orders: list, is_long: bool, trade
 
     average_price = total_cost / total_filled
     return average_price
+
+def tally_orderbook(orderbook: dict, index_price: float) -> dict:
+    bids = orderbook['levels'][0]
+    asks = orderbook['levels'][1]
+    
+    total_bids = sum(float(order['sz']) for order in bids) * index_price
+    total_asks = sum(float(order['sz']) for order in asks) * index_price
+    
+    return {
+        'total_bids': total_bids,
+        'total_asks': total_asks
+    }

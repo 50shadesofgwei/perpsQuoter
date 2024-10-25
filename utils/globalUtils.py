@@ -123,6 +123,10 @@ def calculate_average_entry_price(orders: list, is_long: bool, trade_size_in_ass
     average_price = total_cost / total_filled
     return average_price
 
+def string_to_bytes32(input_string: str) -> bytes:
+    return bytes(input_string.ljust(32), 'utf-8')
+
+
 BYBIT_TOKEN_LIST = [
     'BTC','ETH','SNX','SOL','W','WIF','ARB','AVAX','BNB','1000BONK','DOGE','ENA','FTM','POL','OP','ORDI','1000PEPE','RUNE','ARKM','AXL','BOME','ETHFI','GALA','GMX','INJ','LINK','PENDLE','STX','SUI','TAO','TIA','TON','AAVE','ADA','ALGO','APT','ATOM','AXS','BAL','BCH','BLUR','COMP','CRV','DOT','DYDX','EOS','ETC','ETHBTC','FIL','FLOW','FXS','GRT','ICP','IMX','JTO','JUP','LDO','LTC','MEME','NEAR','PYTH','SEI','SHIB1000','STRK','SUSHI','TRX','UNI','XLM','XRP','YFI','EIGEN','IO','MEW','MKR','NOT','PEOPLE','POL','POPCAT','RENDER','SATS','WLD','ZRO'
 ]

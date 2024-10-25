@@ -91,6 +91,16 @@ class SynthetixV3Quoter:
             logger.error(f"SynthetixCaller - An error occurred while executing a trade for {symbol}: {e}", exc_info=True)
             return None
     
+    def get_market_depth(self) -> dict:
+        try:
+            market_depth = self.client.perps.
+        
+            return market_depth
+
+        except Exception as e:
+            logger.error(f"SynthetixV2Caller - An error occurred while fetching market depth for asset : {e}", exc_info=True)
+            return None
+    
     def build_response_object(self, symbol: str, quote: dict, absolute_trade_size_usd: float, is_long: bool) -> dict:
         try:
             timestamp = get_timestamp()
@@ -118,9 +128,5 @@ class SynthetixV3Quoter:
 
 SynthetixMarketDirectory.initialize()
 x = SynthetixV3Quoter()
-y = x.get_quote_for_trade(
-    'BTC',
-    True,
-    100000
-)
+y = x.get_market_depth()
 print(y)

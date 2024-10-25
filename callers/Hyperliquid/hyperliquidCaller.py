@@ -4,7 +4,7 @@ from utils.logger import logger
 import time
 import concurrent.futures
 from utils.globalUtils import *
-from callers.hyperliquidCallerUtils import *
+from callers.Hyperliquid.hyperliquidCallerUtils import *
 
 class HyperLiquidQuoter:
 
@@ -61,7 +61,9 @@ class HyperLiquidQuoter:
         ) -> dict:
 
         try:
+            index_price = get_price_from_pyth(symbol)
             orderbook_data = self.get_orderbook_for_symbol(symbol)
+            depth = tally_orderbook(orderbook_data, index_price)
         
             
             if orderbook_data:
@@ -85,7 +87,8 @@ class HyperLiquidQuoter:
 
             quotes = {
                 'long': long_results,
-                'short': short_results
+                'short': short_results,
+                'depth': depth
             }
 
             return quotes
@@ -165,8 +168,7 @@ class HyperLiquidQuoter:
             logger.error(f"HyperiquidCaller - An error occurred while fetching quote data for {symbol}: {e}", exc_info=True)
             return None
         
-
 x = HyperLiquidQuoter()
-z = x.get_quotes_for_all_symbols()
-with open(f'hyperliquidQuotes.json', 'w') as f:
-    json.dump(z, f, indent=4)
+orderbook_data = x.get_orderbook_for_symbol('BTC')
+with open('HLOB.json', 'w') as f:
+    json.dump(orderbook_data, f, indent=4)

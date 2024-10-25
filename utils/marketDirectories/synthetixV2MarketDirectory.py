@@ -4,6 +4,7 @@ from utils.logger import logger
 import json
 from clients.synthetixClient import *
 from callers.Synthetix.synthetixCallerUtils import *
+from utils.globalUtils import *
 
 load_dotenv()
 
@@ -86,7 +87,7 @@ class SynthetixV2MarketDirectory:
             return []
     
     @classmethod
-    def get_contract_object_for_symbol(cls, symbol: str) -> list:
+    def get_contract_object_for_symbol(cls, symbol: str):
         try:
             contract_interface = cls.contract_interfaces[symbol]['contract']
             return contract_interface
@@ -95,3 +96,7 @@ class SynthetixV2MarketDirectory:
             logger.error(f"SynthetixV2MarketDirectory - Failed to find corresponding contract for symbol {symbol}: Error: {e}", exc_info=True)
             return []
     
+market_key_str = '0xC8fCd6fB4D15dD7C455373297dEF375a08942eCe'
+market_key = Web3.to_bytes(hexstr=market_key_str)
+market_data = SNXV2MarketProxy.functions.parameters(market_key).call()
+print(market_data)

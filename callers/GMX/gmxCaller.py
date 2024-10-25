@@ -7,6 +7,7 @@ import concurrent.futures
 from gmx_python_sdk.scripts.v2.gmx_utils import get_execution_price_and_price_impact
 from gmx_python_sdk.scripts.v2.get.get import OraclePrices
 from gmx_python_sdk.scripts.v2.get.get_open_interest import OpenInterest
+from gmx_python_sdk.scripts.v2.get.get_available_liquidity import GetAvailableLiquidity
 from clients.gmxClient import ARBITRUM_CONFIG_OBJECT
 from callers.GMX.gmxCallerUtils import *
 
@@ -40,10 +41,11 @@ class GMXQuoter:
             all_quotes = []
             prices = OraclePrices(ARBITRUM_CONFIG_OBJECT.chain).get_recent_prices()
             open_interest = OpenInterest(ARBITRUM_CONFIG_OBJECT)._get_data_processing(prices)
+            liquidity = GetAvailableLiquidity(ARBITRUM_CONFIG_OBJECT)._get_data_processing(open_interest, prices)
 
 
             def process_symbol(symbol):
-                return self.get_all_quotes_for_symbol(symbol, open_interest)
+                return self.get_all_quotes_for_symbol(symbol, open_interest, liquidity)
 
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 results = list(executor.map(process_symbol, GMXMarketDirectory._all_symbols))
@@ -62,11 +64,14 @@ class GMXQuoter:
         self, 
         symbol: str, 
         prices: OraclePrices, 
-        open_interest: OpenInterest
+        open_interest: OpenInterest,
+        liquidity: dict
         ) -> dict:
 
         try:
-            print('made it to here')
+
+            depth = get_depth_from_dict(liquidity, symbol)
+
             def get_long_quote(size):
                 long_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, True, size, prices, open_interest)
                 return long_quote
@@ -81,11 +86,9 @@ class GMXQuoter:
 
             quotes = {
                 'long': long_results,
-                'short': short_results
+                'short': short_results,
+                'depth': depth
             }
-
-            with open(f'{symbol}_quotes.json', 'w') as f:
-                json.dump(quotes, f, indent=4)
 
             return quotes
 
@@ -179,13 +182,7 @@ class GMXQuoter:
 GMXMarketDirectory.initialize()
 prices = OraclePrices(ARBITRUM_CONFIG_OBJECT.chain).get_recent_prices()
 open_interest = OpenInterest(ARBITRUM_CONFIG_OBJECT)._get_data_processing(prices)
+liquidity = GetAvailableLiquidity(ARBITRUM_CONFIG_OBJECT)._get_data_processing(open_interest, prices)
 
-x = GMXQuoter()
-y = x.get_all_quotes_for_symbol(
-    'BTC',
-    prices,
-    open_interest
-)
-print(y)
-with open(f'prices.json', 'w') as f:
-    json.dump(prices, f, indent=4)
+with open(f'liquidity.json', 'w') as f:
+    json.dump(liquidity, f, indent=4)

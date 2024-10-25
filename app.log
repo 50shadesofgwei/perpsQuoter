@@ -14709,3 +14709,353 @@ Traceback (most recent call last):
                  ~~~~~~~~~~~~~~~~~~~~~~^^^
 IndexError: list index out of range
 2024-10-23 18:11:26,349 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-24 10:40:49,352 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 10:42:07,582 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 10:45:40,151 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 10:47:08,953 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 10:48:20,438 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 11:03:36,265 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 11:03:39,811 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-24 11:14:25,816 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 11:14:28,145 - utils.logger - INFO - SynthetixV2MarketDirectory - Markets Initialized
+2024-10-24 11:18:52,392 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 11:18:52,489 - utils.logger - INFO - SynthetixMarketDirectory - Markets Initialized
+2024-10-24 11:20:43,943 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 11:20:44,076 - utils.logger - INFO - SynthetixMarketDirectory - Markets Initialized
+2024-10-24 12:08:05,026 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 12:11:24,451 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 12:13:27,852 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 12:21:22,657 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 12:22:36,610 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 12:25:00,346 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 12:27:15,649 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 12:27:59,181 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 14:27:08,257 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 14:29:05,727 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 14:31:14,224 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 14:43:59,783 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 18:29:20,685 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: list index out of range
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 194, in _load_markets
+    sm_account = self.get_sm_accounts()[0]
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-10-24 18:44:28,213 - utils.logger - ERROR - SynthetixClient - Failed to build v2 client - Error: 429 Client Error: Too Many Requests for url: https://opt-mainnet.g.alchemy.com/v2/0oMhhAe2CgYId2xcCuHLmX5LqdSPZR9q
+Traceback (most recent call last):
+  File "/Users/jfeasby/perpsQuoter/clients/synthetixClient.py", line 38, in get_synthetix_v2_client
+    kwenta = Kwenta(
+             ^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 72, in __init__
+    ) = self._load_markets()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 183, in _load_markets
+    results = list(executor.map(self._load_market, allmarketsdata))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/Cellar/python@3.12/3.12.7/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/kwenta/kwenta.py", line 122, in _load_market
+    maxFundingVelocity = marketsettings_contract.functions.maxFundingVelocity(market[2]).call()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/contract/contract.py", line 305, in call
+    return call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/contract/utils.py", line 96, in call_contract_function
+    return_data = w3.eth.call(
+                  ^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/eth/eth.py", line 260, in call
+    return self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/eth/eth.py", line 279, in _durin_call
+    return self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/module.py", line 75, in caller
+    result = w3.manager.request_blocking(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/manager.py", line 328, in request_blocking
+    response = self._make_request(method, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/manager.py", line 212, in _make_request
+    return request_func(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/middleware/gas_price_strategy.py", line 101, in middleware
+    return make_request(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/middleware/formatting.py", line 126, in middleware
+    response = make_request(method, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/middleware/attrdict.py", line 43, in middleware
+    response = make_request(method, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/middleware/formatting.py", line 126, in middleware
+    response = make_request(method, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/middleware/formatting.py", line 126, in middleware
+    response = make_request(method, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/middleware/buffered_gas_estimate.py", line 43, in middleware
+    return make_request(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/middleware/formatting.py", line 126, in middleware
+    response = make_request(method, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/middleware/exception_retry_request.py", line 125, in middleware
+    return make_request(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/providers/rpc.py", line 90, in make_request
+    raw_response = make_post_request(
+                   ^^^^^^^^^^^^^^^^^^
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/web3/_utils/request.py", line 115, in make_post_request
+    response.raise_for_status()
+  File "/Users/jfeasby/perpsQuoter/venv/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://opt-mainnet.g.alchemy.com/v2/0oMhhAe2CgYId2xcCuHLmX5LqdSPZR9q
+2024-10-24 18:44:30,781 - utils.logger - INFO - GMXMarketDirectory - Markets Initialized

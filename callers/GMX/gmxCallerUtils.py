@@ -47,3 +47,18 @@ def get_midpoint_price(data: dict, symbol: str) -> float:
     except Exception as e:
         logger.error(f"GMXCallerUtils - Failed to calculate midpoint price from API response: {e}")
         return None
+
+def get_depth_from_dict(depth_dict: dict, symbol: str) -> dict:
+    try:
+
+        long_depth = depth_dict['long'].get(symbol, 0)
+        short_depth = depth_dict['short'].get(symbol, 0)
+        
+        return {
+            'long': long_depth,
+            'short': short_depth
+        }
+
+    except Exception as e:
+        logger.error(f"GMXCallerUtils - Failed to get depth from dictionary. Error: {e}", exc_info=True)
+        return None

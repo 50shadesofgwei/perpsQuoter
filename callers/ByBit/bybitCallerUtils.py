@@ -37,3 +37,15 @@ def get_fees(trade_size_usd: float) -> float:
     except Exception as e:
             logger.error(f"ByBitCallerUtils - Failed to calculate fees on order size: {trade_size_usd}. Error: {e}")
             return None
+
+def tally_orderbook(orderbook: dict, index_price: float) -> dict:
+    buy_orders = orderbook['result']['b']
+    sell_orders = orderbook['result']['a']
+    
+    total_buy = sum(float(order[1]) for order in buy_orders) * index_price
+    total_sell = sum(float(order[1]) for order in sell_orders) * index_price
+    
+    return {
+        'total_buy': total_buy,
+        'total_sell': total_sell
+    }

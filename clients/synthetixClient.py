@@ -38,7 +38,8 @@ def get_synthetix_v2_client() -> Kwenta:
         kwenta = Kwenta(
             network_id=10,
             provider_rpc=os.getenv('OPTIMISM_PROVIDER_RPC'),
-            wallet_address=os.getenv('ADDRESS')
+            wallet_address=os.getenv('ADDRESS'),
+            private_key=os.getenv('PRIVATE_KEY')
         )
 
         return kwenta

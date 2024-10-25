@@ -35,3 +35,15 @@ def calculate_average_entry_price_binance(orders: list, is_long: bool, trade_siz
 
     average_price = total_cost / total_filled
     return average_price
+
+def tally_orderbook(orderbook: dict, index_price: float) -> dict:
+    bids = orderbook['bids']
+    asks = orderbook['asks']
+    
+    total_bids = sum(float(order[1]) for order in bids) * index_price
+    total_asks = sum(float(order[1]) for order in asks) * index_price
+    
+    return {
+        'total_bids': total_bids,
+        'total_asks': total_asks
+    }
