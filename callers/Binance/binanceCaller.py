@@ -15,7 +15,7 @@ class BinanceQuoter:
         self.client = GLOBAL_BINANCE_CLIENT
         self.api_key = os.getenv('BINANCE_API_KEY')
         self.api_secret = os.getenv('BINANCE_API_SECRET')
-        self.MAX_RETRIES = 5  
+        self.MAX_RETRIES = 1
         self.BACKOFF_FACTOR = 0.5
 
     def retry_with_backoff(self, func, *args):
@@ -95,7 +95,7 @@ class BinanceQuoter:
                 short_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, False, size, bids, index_price)
                 return short_quote
 
-            with concurrent.futures.ThreadPoolExecutor() as executor:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
                 long_results = list(executor.map(get_long_quote, TARGET_TRADE_SIZES))
                 short_results = list(executor.map(get_short_quote, TARGET_TRADE_SIZES))
 
@@ -201,11 +201,4 @@ class BinanceQuoter:
             logger.error(f"BinanceCaller - An error occurred while fetching quote data for {symbol}: {e}", exc_info=True)
             return None
 
-x = BinanceQuoter()
-orderbook_data = x.client.depth(
-    symbol='BTCUSDT',
-    limit='5',
-)
 
-with open('BinanceOrderbook6969696.json', 'w') as f:
-    json.dump(orderbook_data, f, indent=4)

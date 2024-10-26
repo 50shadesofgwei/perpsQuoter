@@ -10,7 +10,7 @@ class HyperLiquidQuoter:
 
     def __init__(self):
         self.client = Info()
-        self.MAX_RETRIES = 5  
+        self.MAX_RETRIES = 1 
         self.BACKOFF_FACTOR = 0.5
 
     def retry_with_backoff(self, func, *args):
@@ -81,7 +81,7 @@ class HyperLiquidQuoter:
                 short_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, False, size, bids, index_price)
                 return short_quote
 
-            with concurrent.futures.ThreadPoolExecutor() as executor:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
                 long_results = list(executor.map(get_long_quote, TARGET_TRADE_SIZES))
                 short_results = list(executor.map(get_short_quote, TARGET_TRADE_SIZES))
 
@@ -168,7 +168,3 @@ class HyperLiquidQuoter:
             logger.error(f"HyperiquidCaller - An error occurred while fetching quote data for {symbol}: {e}", exc_info=True)
             return None
         
-x = HyperLiquidQuoter()
-orderbook_data = x.get_orderbook_for_symbol('BTC')
-with open('HLOB.json', 'w') as f:
-    json.dump(orderbook_data, f, indent=4)

@@ -11,7 +11,7 @@ from utils.marketDirectories.synthetixV2MarketDirectory import SynthetixV2Market
 class SynthetixV2Quoter:
     def __init__(self):
         self.client = GLOBAL_SYNTHETIX_V2_CLIENT
-        self.MAX_RETRIES = 5  
+        self.MAX_RETRIES = 1  
         self.BACKOFF_FACTOR = 0.5
     
     def retry_with_backoff(self, func, *args):
@@ -58,9 +58,11 @@ class SynthetixV2Quoter:
     def get_all_quotes_for_symbol(self, symbol: str) -> dict:
         try:
             contract = SynthetixV2MarketDirectory.get_contract_object_for_symbol(symbol)
-            raw_return_object = contract.functions.assetPrice().call()
+            contract_object = contract['perps_market_contract']
+            raw_return_object = contract_object.functions.assetPrice().call()
             mark_price: float = raw_return_object[0] / 10**18
             index_price: float = get_price_from_pyth(symbol)
+            market_depth = self.get_market_depth(symbol)
 
             def get_long_quote(size):
                 long_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, True, size, index_price, mark_price)
@@ -70,17 +72,15 @@ class SynthetixV2Quoter:
                 short_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, False, size, index_price, mark_price)
                 return short_quote
 
-            with concurrent.futures.ThreadPoolExecutor() as executor:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
                 long_results = list(executor.map(get_long_quote, TARGET_TRADE_SIZES))
                 short_results = list(executor.map(get_short_quote, TARGET_TRADE_SIZES))
 
             quotes = {
                 'long': long_results,
-                'short': short_results
+                'short': short_results,
+                'depth': market_depth
             }
-
-            with open(f'SNXV2BTC.json', 'w') as f:
-                json.dump(quotes, f, indent=4)
 
             return quotes
 
@@ -102,7 +102,8 @@ class SynthetixV2Quoter:
             size_by_decimals: int = size_in_asset * 10 ** decimals
             size_delta: int = int(adjust_size_for_is_long(size_by_decimals, is_long))
             contract = SynthetixV2MarketDirectory.get_contract_object_for_symbol(symbol)
-            raw_return_object = contract.functions.fillPrice(size_delta).call()
+            contract_object = contract['contract']
+            raw_return_object = contract_object.functions.fillPrice(size_delta).call()
             quote_price = raw_return_object[0] / 10**18
 
             quote = self.build_response_object(
@@ -119,12 +120,31 @@ class SynthetixV2Quoter:
             logger.error(f"SynthetixV2Caller - An error occurred while fetching a quote for {symbol}: {e}", exc_info=True)
             return None
 
-    def get_max_market_value(self, symbol: str) -> dict:
+    def get_market_data(self, symbol: str):
         try:
             contract = SynthetixV2MarketDirectory.get_contract_object_for_symbol(symbol)
+            contract_object = contract['market_data_contract']
             
+            market_key = get_market_key_for_symbol(symbol)
+            parameters = contract_object.functions.parameters(market_key).call()
+
+            return parameters
         
-            # return all_quotes
+        except Exception as e:
+            logger.error(f"SynthetixV2Caller - An error occurred while fetching market data for asset {symbol}: {e}", exc_info=True)
+            return None
+
+    def get_max_market_value(self, symbol: str, price: float, decimals: int) -> dict:
+        try:
+            contract = SynthetixV2MarketDirectory.get_contract_object_for_symbol(symbol)
+            contract_object = contract['market_data_contract']
+            
+            market_key = get_market_key_for_symbol(symbol)
+            parameters = contract_object.functions.parameters(market_key).call()
+            max_market_value: int = int(parameters[7]) / 10**decimals
+            max_market_value_usd = max_market_value * price
+
+            return max_market_value_usd
 
         except Exception as e:
             logger.error(f"SynthetixV2Caller - An error occurred while fetching market depth for asset {symbol}: {e}", exc_info=True)
@@ -132,12 +152,30 @@ class SynthetixV2Quoter:
 
     def get_market_depth(self, symbol: str) -> dict:
         try:
-            market_depth = self.client
-        
-            # return all_quotes
+            decimals = get_decimals_for_symbol(symbol)
+            price = get_price_from_pyth(symbol)
+            skew_dict = self.client.get_market_skew(symbol)
+            open_interest_long = float((skew_dict['long'] / 10**decimals) * price)
+            open_interest_short = float((skew_dict['short'] / 10**decimals) * price)
+            total_open_interest = open_interest_long + open_interest_short
+            max_market_value = self.get_max_market_value(symbol, price, decimals) * 2
+            market_depth = max_market_value - total_open_interest
+            
+            return market_depth
 
         except Exception as e:
             logger.error(f"SynthetixV2Caller - An error occurred while fetching market depth for asset {symbol}: {e}", exc_info=True)
+            return None
+
+    def get_fees(self, parameters: tuple):
+        try:
+            fee = parameters[0] / 10**18
+            fee = fee / 100
+
+            return fee
+        
+        except Exception as e:
+            logger.error(f"SynthetixV2Caller - An error occurred while fetching fees: {e}", exc_info=True)
             return None
     
     def build_response_object(
@@ -151,7 +189,9 @@ class SynthetixV2Quoter:
         try:
             timestamp = get_timestamp()
             side = get_side_for_is_long(is_long)
-            fees = 0.69
+            parameters = self.get_market_data(symbol)
+            fee_rate = self.get_fees(symbol, parameters)
+            fee = absolute_trade_size_usd * fee_rate
 
             api_response = {
                 'exchange': 'SynthetixV2OP',
@@ -161,7 +201,7 @@ class SynthetixV2Quoter:
                 'trade_size': absolute_trade_size_usd,
                 'index_price': index_price,
                 'fill_price': fill_price,
-                'fees': fees
+                'fees': fee
             }
 
             return api_response
@@ -169,12 +209,3 @@ class SynthetixV2Quoter:
         except Exception as e:
             logger.error(f"SynthetixV2Caller - An error occurred while fetching quote data for {symbol}: {e}", exc_info=True)
             return None
-
-SynthetixV2MarketDirectory.initialize()
-x = SynthetixV2Quoter()
-y = x.get_all_quotes_for_symbol(
-    'BTC'
-)
-
-contract = x.client.get_market_contract('sBTC')
-print(contract)

@@ -13,7 +13,7 @@ from callers.GMX.gmxCallerUtils import *
 
 class GMXQuoter:
     def __init__(self):
-        self.MAX_RETRIES = 5  
+        self.MAX_RETRIES = 1  
         self.BACKOFF_FACTOR = 0.5
     
     def retry_with_backoff(self, func, *args):
@@ -45,7 +45,7 @@ class GMXQuoter:
 
 
             def process_symbol(symbol):
-                return self.get_all_quotes_for_symbol(symbol, open_interest, liquidity)
+                return self.get_all_quotes_for_symbol(symbol, prices, open_interest, liquidity)
 
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 results = list(executor.map(process_symbol, GMXMarketDirectory._all_symbols))
@@ -80,7 +80,7 @@ class GMXQuoter:
                 short_quote = self.retry_with_backoff(self.get_quote_for_trade, symbol, False, size, prices, open_interest)
                 return short_quote
 
-            with concurrent.futures.ThreadPoolExecutor() as executor:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
                 long_results = list(executor.map(get_long_quote, TARGET_TRADE_SIZES))
                 short_results = list(executor.map(get_short_quote, TARGET_TRADE_SIZES))
 
@@ -179,10 +179,3 @@ class GMXQuoter:
             logger.error(f"GMXCaller - An error occurred while fetching quote data for {symbol}: {e}", exc_info=True)
             return None
 
-GMXMarketDirectory.initialize()
-prices = OraclePrices(ARBITRUM_CONFIG_OBJECT.chain).get_recent_prices()
-open_interest = OpenInterest(ARBITRUM_CONFIG_OBJECT)._get_data_processing(prices)
-liquidity = GetAvailableLiquidity(ARBITRUM_CONFIG_OBJECT)._get_data_processing(open_interest, prices)
-
-with open(f'liquidity.json', 'w') as f:
-    json.dump(liquidity, f, indent=4)

@@ -14,7 +14,6 @@ class SynthetixV2MarketDirectory:
     _file_path = 'synthetix_v2_markets.json'
     _is_initialized = False
     _all_symbols = []
-    
 
     @classmethod
     def initialize(cls):
@@ -58,8 +57,14 @@ class SynthetixV2MarketDirectory:
     @classmethod
     def create_contract_interfaces(cls, contract_data: list, w3: Web3):
         contract_interfaces = {}
-        with open('utils/ABIs/SNXV2PerpsMarket.json', 'r') as f:
-                abi = json.load(f)
+        with open('utils/ABIs/SNXV2PerpsMarket.json', 'r') as a:
+            abi = json.load(a)
+        
+        with open('utils/ABIs/SNXV2PerpsMarketViews.json', 'r') as b:
+            views_abi = json.load(b)
+
+        with open('utils/ABIs/SNXV2MarketData.json', 'r') as c:
+            data_abi = json.load(c)
         
         for data in contract_data:
             if data['token_symbol'] == 'sBTC':
@@ -68,8 +73,13 @@ class SynthetixV2MarketDirectory:
                 data['token_symbol'] = 'ETH'
             
             contract = w3.eth.contract(address=Web3.to_checksum_address(data['market_address']), abi=abi)
+            views_contract = w3.eth.contract(address=Web3.to_checksum_address(data['market_address']), abi=views_abi)
+            data_contract = w3.eth.contract(address='0x340B5d664834113735730Ad4aFb3760219Ad9112', abi=data_abi)
+
             contract_interface = {
-                'contract': contract,
+                'views_contract': views_contract,
+                'perps_market_contract': contract,
+                'market_data_contract': data_contract,
                 'address': data['market_address'],
                 'symbol': data['token_symbol']
             }
@@ -87,16 +97,17 @@ class SynthetixV2MarketDirectory:
             return []
     
     @classmethod
-    def get_contract_object_for_symbol(cls, symbol: str):
+    def get_contract_object_for_symbol(cls, symbol: str) -> dict:
         try:
-            contract_interface = cls.contract_interfaces[symbol]['contract']
+            contract_interface = cls.contract_interfaces[symbol]
             return contract_interface
 
         except Exception as e:
             logger.error(f"SynthetixV2MarketDirectory - Failed to find corresponding contract for symbol {symbol}: Error: {e}", exc_info=True)
             return []
-    
-market_key_str = '0xC8fCd6fB4D15dD7C455373297dEF375a08942eCe'
-market_key = Web3.to_bytes(hexstr=market_key_str)
-market_data = SNXV2MarketProxy.functions.parameters(market_key).call()
-print(market_data)
+
+market_data = SNXV2MarketProxy.functions.allProxiedMarketSummaries().call()
+y = process_market_data(market_data)
+
+with open('fuckthisshit.json', 'w') as f:
+    json.dump(y, f, indent=4)
