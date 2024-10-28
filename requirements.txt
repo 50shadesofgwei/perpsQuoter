@@ -1,11 +1,19 @@
+binance==0.3
+binance_connector==3.8.1
 binance_futures_connector==4.0.0
+Flask==3.0.3
+gmx_python_sdk==0.0.8
 hexbytes==0.3.1
+kwenta==1.2.0
 pybit==5.6.2
 Pypubsub==4.0.3
 python-dotenv==1.0.1
-synthetix>=0.1.13
+python_binance==1.0.17
+schedule==1.2.2
+schedule==1.2.0
+setuptools==75.2.0
+setuptools==68.2.2
+synthetix==0.1.20
+synthetix==0.1.16
+synthetix==0.1.17
 web3==6.16.0
-hyperliquid-python-sdk>=0.7.0
-kwenta>=1.2.0
-flask>=3.0.3
-gmx_python_sdk @ git+https://github.com/50shadesofgwei/gmx_python_sdk_custom.git@main
