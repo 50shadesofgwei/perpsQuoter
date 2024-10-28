@@ -23,11 +23,11 @@ class MasterQuoter:
         GMXMarketDirectory.initialize()
         SynthetixMarketDirectory.initialize()
         SynthetixV2MarketDirectory.initialize()
-        self.most_recent_quotes = {}
 
-    def hourly_runner(func):
+    def hourly_runner(self):
         try:
-            schedule.every(1).hours.do(func)
+            self.get_all_quotes()
+            schedule.every(1).hours.do(self.get_all_quotes)
 
             while True:
                 schedule.run_pending()
@@ -35,7 +35,6 @@ class MasterQuoter:
         
         except Exception as e:
             logger.error(f"MasterCaller - An error occurred with the hourly runner: {e}", exc_info=True)
-            return None
 
     def get_all_quotes(self):
         try:
@@ -55,12 +54,9 @@ class MasterQuoter:
                 'snxv3': snxv3_quotes
             }
 
-            with open('TESTRUN.json', 'w') as f:
+            with open('most_recent_quotes.json', 'w') as f:
                 json.dump(all_quotes, f, indent=4)
-        
+
         except Exception as e:
             logger.error(f"MasterCaller - An error occurred collecting quotes: {e}", exc_info=True)
             return None
-
-x = MasterQuoter()
-x.get_all_quotes()
