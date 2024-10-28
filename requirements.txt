@@ -7,3 +7,4 @@ synthetix>=0.1.13
 web3==6.16.0
 hyperliquid-python-sdk>=0.7.0
 kwenta>=1.2.0
+flask>=3.0.3
