@@ -105,9 +105,3 @@ class SynthetixV2MarketDirectory:
         except Exception as e:
             logger.error(f"SynthetixV2MarketDirectory - Failed to find corresponding contract for symbol {symbol}: Error: {e}", exc_info=True)
             return []
-
-market_data = SNXV2MarketProxy.functions.allProxiedMarketSummaries().call()
-y = process_market_data(market_data)
-
-with open('fuckthisshit.json', 'w') as f:
-    json.dump(y, f, indent=4)

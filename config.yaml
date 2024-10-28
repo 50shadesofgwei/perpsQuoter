@@ -1,0 +1,8 @@
+chain_ids:
+  arbitrum: 42161
+  avalanche: 43113
+private_key: 
+rpcs:
+  arbitrum: https://arb-mainnet.g.alchemy.com/v2/0oMhhAe2CgYId2xcCuHLmX5LqdSPZR9q
+  avalanche: api.avax-test.network
+user_wallet_address: '0xEE12f066d2C1a97cF62F96e453a088388Cf4a7b9'

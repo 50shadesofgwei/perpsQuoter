@@ -1,0 +1,190 @@
+{
+    "long": [
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Long",
+            "trade_size": 100,
+            "index_price": 0.4555,
+            "fill_price": 0.4553,
+            "fees": 0.055
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Long",
+            "trade_size": 10000,
+            "index_price": 0.4555,
+            "fill_price": 0.45541128955300003,
+            "fees": 5.5
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Long",
+            "trade_size": 100000,
+            "index_price": 0.4555,
+            "fill_price": 0.4558439220615999,
+            "fees": 55.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Long",
+            "trade_size": 500000,
+            "index_price": 0.4555,
+            "fill_price": 0.4582638414104101,
+            "fees": 275.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Long",
+            "trade_size": 1000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 550.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Long",
+            "trade_size": 5000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 2750.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Long",
+            "trade_size": 10000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 5500.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Long",
+            "trade_size": 25000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 13750.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Long",
+            "trade_size": 50000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 27500.0
+        }
+    ],
+    "short": [
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Short",
+            "trade_size": 100,
+            "index_price": 0.4555,
+            "fill_price": 0.4552,
+            "fees": 0.055
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Short",
+            "trade_size": 10000,
+            "index_price": 0.4555,
+            "fill_price": 0.4550922137119999,
+            "fees": 5.5
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Short",
+            "trade_size": 100000,
+            "index_price": 0.4555,
+            "fill_price": 0.45460978825195003,
+            "fees": 55.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Short",
+            "trade_size": 500000,
+            "index_price": 0.4555,
+            "fill_price": 0.4527600542042399,
+            "fees": 275.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Short",
+            "trade_size": 1000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 550.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Short",
+            "trade_size": 5000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 2750.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Short",
+            "trade_size": 10000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 5500.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Short",
+            "trade_size": 25000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 13750.0
+        },
+        {
+            "exchange": "ByBit",
+            "symbol": "EOS",
+            "timestamp": "2024-10-28 16:58:43",
+            "side": "Short",
+            "trade_size": 50000000,
+            "index_price": 0.4555,
+            "fill_price": 0,
+            "fees": 27500.0
+        }
+    ],
+    "depth": {
+        "total_buy": 710943.1246,
+        "total_sell": 607040.9327
+    }
+}
