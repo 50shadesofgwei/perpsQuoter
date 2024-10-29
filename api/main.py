@@ -42,7 +42,5 @@ def get_quotes(symbol: str):
 
     return jsonify(symbol_quotes)
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
 
 

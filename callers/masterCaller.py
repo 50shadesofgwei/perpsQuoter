@@ -61,5 +61,3 @@ class MasterQuoter:
             logger.error(f"MasterCaller - An error occurred collecting quotes: {e}", exc_info=True)
             return None
 
-x = MasterQuoter()
-y = x.get_all_quotes()
