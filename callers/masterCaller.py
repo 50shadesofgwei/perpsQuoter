@@ -40,7 +40,7 @@ class MasterQuoter:
         try:
             binance_quotes = self.binance.get_quotes_for_all_symbols()
             bybit_quotes = self.bybit.get_quotes_for_all_symbols()
-            gmx_quotes = self.GMX.get_quotes_for_all_symbols()
+            # gmx_quotes = self.GMX.get_quotes_for_all_symbols()
             hyperliquid_quotes = self.hyperliquid.get_quotes_for_all_symbols()
             snxv2_quotes = self.synthetixV2.get_quotes_for_all_symbols()
             snxv3_quotes = self.synthetixv3.get_quotes_for_all_symbols()
@@ -48,7 +48,7 @@ class MasterQuoter:
             all_quotes = {
                 'binance': binance_quotes,
                 'bybit': bybit_quotes,
-                'gmx': gmx_quotes,
+                # 'gmx': gmx_quotes,
                 'hyperliquid': hyperliquid_quotes,
                 'snxv2': snxv2_quotes,
                 'snxv3': snxv3_quotes
