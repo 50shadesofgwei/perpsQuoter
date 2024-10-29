@@ -42,5 +42,6 @@ def get_quotes(symbol: str):
 
     return jsonify(symbol_quotes)
 
-
+y = health_check()
+print(y)
 
