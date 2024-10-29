@@ -34,16 +34,16 @@ def build_params_object(symbol: str, is_long: bool, trade_size_usd: float, price
 
 def get_midpoint_price(data: dict, symbol: str) -> float:
     try:
+
         if symbol == 'BTC':
             symbol = 'wBTC.b'
-        for price_data in data.get('signedPrices', []):
-            if price_data.get('tokenSymbol') == symbol:
+        for address, price_data in data.items():
+            if str(price_data.get('tokenSymbol')) == symbol:
                 min_price = float(price_data['minPriceFull'])
                 max_price = float(price_data['maxPriceFull'])
                 midpoint = (min_price + max_price) / 2
                 return midpoint
 
-        raise ValueError(f"Symbol '{symbol}' not found in the provided data.")
     except Exception as e:
         logger.error(f"GMXCallerUtils - Failed to calculate midpoint price from API response: {e}")
         return None

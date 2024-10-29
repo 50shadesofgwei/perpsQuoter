@@ -69,8 +69,6 @@ class HyperLiquidQuoter:
             if orderbook_data:
                 asks = orderbook_data['levels'][0]
                 bids = orderbook_data['levels'][1]
-                with open(f'hyperliquidBTCasks.json', 'w') as f:
-                    json.dump(asks, f, indent=4)
 
 
             def get_long_quote(size):

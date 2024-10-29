@@ -53,6 +53,9 @@ class GMXQuoter:
             for quotes in results:
                 if quotes:
                     all_quotes.append(quotes)
+            
+            # with open('all_quotesTEST.json', 'w') as f:
+            #     json.dump(all_quotes, f, indent=4)
 
             return all_quotes
 
@@ -106,6 +109,11 @@ class GMXQuoter:
         ) -> dict:
 
         try:
+            if trade_size_usd > 25000000:
+                return None
+            if symbol != 'BTC' or 'ETH':
+                if trade_size_usd > 999999:
+                    return None
             decimals = get_decimals_for_symbol(symbol)
             params = build_params_object(
                 symbol,
@@ -156,10 +164,8 @@ class GMXQuoter:
             decimals = get_decimals_for_symbol(symbol)
             timestamp = get_timestamp()
             side = get_side_for_is_long(is_long)
-            index_price = get_midpoint_price(
-                prices,
-                symbol
-            ) / 10**decimals
+            index_price = get_midpoint_price(prices, symbol)
+            index_price = index_price / 10**decimals
             fill_price = float(execution_price_dict['execution_price'])
 
             api_response = {
@@ -178,4 +184,3 @@ class GMXQuoter:
         except Exception as e:
             logger.error(f"GMXCaller - An error occurred while fetching quote data for {symbol}: {e}", exc_info=True)
             return None
-

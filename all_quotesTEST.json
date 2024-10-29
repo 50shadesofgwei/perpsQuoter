@@ -1,0 +1,1687 @@
+[
+    {
+        "long": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 30744974.11343544,
+            "short": 26886957.950546652
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "ETH",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 0.0025653085661107274,
+                "fill_price": 2566.872363605139,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ETH",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 0.0025653085661107274,
+                "fill_price": 2566.874652021341,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ETH",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 0.0025653085661107274,
+                "fill_price": 2566.895455992162,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ETH",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 0.0025653085661107274,
+                "fill_price": 2566.987922164831,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "ETH",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 0.0025653085661107274,
+                "fill_price": 2565.2376,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ETH",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 0.0025653085661107274,
+                "fill_price": 2565.2376,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ETH",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 0.0025653085661107274,
+                "fill_price": 2565.2376,
+                "fees": 50.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ETH",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 500000,
+                "index_price": 0.0025653085661107274,
+                "fill_price": 2565.2376,
+                "fees": 250.0
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 59313935.14336288,
+            "short": 60308097.02201168
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "DOGE",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 16116491701432.05,
+                "fill_price": 0.16136226035139867,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "DOGE",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 16116491701432.05,
+                "fill_price": 0.1613862533691266,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "DOGE",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 16116491701432.05,
+                "fill_price": 0.16160469944474792,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "DOGE",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 16116491701432.05,
+                "fill_price": 0.16258276892015183,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "DOGE",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 16116491701432.05,
+                "fill_price": 0.16115024402864103,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "DOGE",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 16116491701432.05,
+                "fill_price": 0.16115024402864103,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "DOGE",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 16116491701432.05,
+                "fill_price": 0.16115024402864103,
+                "fees": 61.24897046349082
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "DOGE",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 500000,
+                "index_price": 16116491701432.05,
+                "fill_price": 0.16115024402864103,
+                "fees": 341.2489704634909
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 2368354.9905123007,
+            "short": 2277313.9303944986
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "SOL",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 178117403512553.47,
+                "fill_price": 178.26768621925842,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "SOL",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 178117403512553.47,
+                "fill_price": 178.2700705172956,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "SOL",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 178117403512553.47,
+                "fill_price": 178.29175068979322,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "SOL",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 178117403512553.47,
+                "fill_price": 178.38817086087772,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "SOL",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 178117403512553.47,
+                "fill_price": 178.11051,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "SOL",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 178117403512553.47,
+                "fill_price": 178.11051,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "SOL",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 178117403512553.47,
+                "fill_price": 178.11051,
+                "fees": 50.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "SOL",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 500000,
+                "index_price": 178117403512553.47,
+                "fill_price": 178.11051,
+                "fees": 284.6949148016863
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 14395554.065574914,
+            "short": 14558793.878846101
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "LTC",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 7072160738118799.0,
+                "fill_price": 70.71113424025171,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LTC",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 7072160738118799.0,
+                "fill_price": 70.72417490799629,
+                "fees": 6.455515618897643
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LTC",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 7072160738118799.0,
+                "fill_price": 70.89558903970122,
+                "fees": 69.45551561889765
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LTC",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 7072160738118799.0,
+                "fill_price": 71.6713900253016,
+                "fees": 349.45551561889766
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "LTC",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 7072160738118799.0,
+                "fill_price": 70.714535,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LTC",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 7072160738118799.0,
+                "fill_price": 70.714535,
+                "fees": 7.000000000000001
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 527055.2338268261,
+            "short": 447213.1546814125
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "UNI",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 7.779841378819e-06,
+                "fill_price": 7.797182619206,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "UNI",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 7.779841378819e-06,
+                "fill_price": 7.799620066849,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "UNI",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 7.779841378819e-06,
+                "fill_price": 7.821848779927,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "UNI",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 7.779841378819e-06,
+                "fill_price": 7.922195670327,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "UNI",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 7.779841378819e-06,
+                "fill_price": 7.778930157638,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "UNI",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 7.779841378819e-06,
+                "fill_price": 7.778930157638,
+                "fees": 6.4131782974829905
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "UNI",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 7.779841378819e-06,
+                "fill_price": 7.778930157638,
+                "fees": 69.413178297483
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "UNI",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Short",
+                "trade_size": 500000,
+                "index_price": 7.779841378819e-06,
+                "fill_price": 7.778930157638,
+                "fees": 349.413178297483
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 266997.55377431586,
+            "short": 193711.55856704467
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "LINK",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 1.1177530740583e-05,
+                "fill_price": 11.181647534528,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LINK",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 1.1177530740583e-05,
+                "fill_price": 11.182085242959,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LINK",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 1.1177530740583e-05,
+                "fill_price": 11.186294066421,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LINK",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 1.1177530740583e-05,
+                "fill_price": 11.208120666402,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "LINK",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 1.1177530740583e-05,
+                "fill_price": 11.174634203724,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LINK",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 1.1177530740583e-05,
+                "fill_price": 11.174634203724,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LINK",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 1.1177530740583e-05,
+                "fill_price": 11.174634203724,
+                "fees": 50.833041806760065
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "LINK",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 500000,
+                "index_price": 1.1177530740583e-05,
+                "fill_price": 11.174634203724,
+                "fees": 330.83304180676015
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 3820612.641026308,
+            "short": 3426513.4736710833
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "ARB",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 5.222419266605e-07,
+                "fill_price": 0.521991784615,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ARB",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 5.222419266605e-07,
+                "fill_price": 0.521999062014,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ARB",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 5.222419266605e-07,
+                "fill_price": 0.52208388015,
+                "fees": 60.2548904394591
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ARB",
+                "timestamp": "2024-10-28 18:59:15",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 5.222419266605e-07,
+                "fill_price": 0.523128854645,
+                "fees": 340.25489043945913
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "ARB",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 5.222419266605e-07,
+                "fill_price": 0.522052286569,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ARB",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 5.222419266605e-07,
+                "fill_price": 0.522052286569,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ARB",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 5.222419266605e-07,
+                "fill_price": 0.522052286569,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ARB",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Short",
+                "trade_size": 500000,
+                "index_price": 5.222419266605e-07,
+                "fill_price": 0.522052286569,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 3647633.6921425737,
+            "short": 3576429.3439778644
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "XRP",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 5.190477882954396e+17,
+                "fill_price": 0.5201669588210399,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "XRP",
+                "timestamp": "2024-10-28 18:59:16",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 5.190477882954396e+17,
+                "fill_price": 0.5202753392513816,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "XRP",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 5.190477882954396e+17,
+                "fill_price": 0.5212627215536226,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "XRP",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 5.190477882954396e+17,
+                "fill_price": 0.5256968159453389,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "XRP",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 5.190477882954396e+17,
+                "fill_price": 0.5189772445351232,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "XRP",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 5.190477882954396e+17,
+                "fill_price": 0.5189772445351232,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "XRP",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 5.190477882954396e+17,
+                "fill_price": 0.5189772445351232,
+                "fees": 59.115746975222095
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 1092703.0468142757,
+            "short": 1071184.1902289505
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "BNB",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 0.00060044955484027,
+                "fill_price": 600.393365753173,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "BNB",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 0.00060044955484027,
+                "fill_price": 600.397924824272,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "BNB",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 0.00060044955484027,
+                "fill_price": 600.509927280599,
+                "fees": 67.71929566689951
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "BNB",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 0.00060044955484027,
+                "fill_price": 601.621056002577,
+                "fees": 347.71929566689954
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "BNB",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 0.00060044955484027,
+                "fill_price": 600.402177860592,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "BNB",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 0.00060044955484027,
+                "fill_price": 600.402177860592,
+                "fees": 7.000000000000001
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 497482.9226538252,
+            "short": 459490.7817059961
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "AAVE",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 0.0001515654901839935,
+                "fill_price": 151.533217494086,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AAVE",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 0.0001515654901839935,
+                "fill_price": 151.53710665291,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AAVE",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 0.0001515654901839935,
+                "fill_price": 151.58313405949,
+                "fees": 63.323458073565845
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AAVE",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 0.0001515654901839935,
+                "fill_price": 152.005151527804,
+                "fees": 343.32345807356586
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "AAVE",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 0.0001515654901839935,
+                "fill_price": 151.555518030837,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AAVE",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 0.0001515654901839935,
+                "fill_price": 151.555518030837,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AAVE",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 0.0001515654901839935,
+                "fill_price": 151.555518030837,
+                "fees": 70.00000000000001
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 1683083.110909258,
+            "short": 895265.1903741205
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "ATOM",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 4.4547650597725773e+18,
+                "fill_price": 4.450122405066874,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ATOM",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 4.4547650597725773e+18,
+                "fill_price": 4.450694596405993,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ATOM",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 4.4547650597725773e+18,
+                "fill_price": 4.458454715925888,
+                "fees": 63.268531513494025
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ATOM",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 4.4547650597725773e+18,
+                "fill_price": 4.504804473874436,
+                "fees": 343.2685315134941
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "ATOM",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 4.4547650597725773e+18,
+                "fill_price": 4.454010765449269,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "ATOM",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 4.4547650597725773e+18,
+                "fill_price": 4.454010765449269,
+                "fees": 7.000000000000001
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 388731.37184876064,
+            "short": 251397.73953515347
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "NEAR",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 4.2957335e-18,
+                "fill_price": 4.294703,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "NEAR",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 4.2957335e-18,
+                "fill_price": 4.295001,
+                "fees": 5.397001656735899
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "NEAR",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 4.2957335e-18,
+                "fill_price": 4.302226,
+                "fees": 68.39700165673591
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "NEAR",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 4.2957335e-18,
+                "fill_price": 4.336065,
+                "fees": 348.39700165673594
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "NEAR",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 4.2957335e-18,
+                "fill_price": 4.295148,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "NEAR",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 4.2957335e-18,
+                "fill_price": 4.295148,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "NEAR",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 4.2957335e-18,
+                "fill_price": 4.295148,
+                "fees": 70.00000000000001
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 1015108.772720933,
+            "short": 930825.0463256191
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "AVAX",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 2.6248101149313e-05,
+                "fill_price": 26.242891470034,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AVAX",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 2.6248101149313e-05,
+                "fill_price": 26.245488662816,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AVAX",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 2.6248101149313e-05,
+                "fill_price": 26.269123107003,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AVAX",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 2.6248101149313e-05,
+                "fill_price": 26.374682150564,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "AVAX",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 2.6248101149313e-05,
+                "fill_price": 26.242089000616,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AVAX",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 2.6248101149313e-05,
+                "fill_price": 26.242089000616,
+                "fees": 6.7040744443606775
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "AVAX",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 2.6248101149313e-05,
+                "fill_price": 26.242089000616,
+                "fees": 69.70407444436069
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 494914.47262432246,
+            "short": 466577.722302401
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "OP",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 1.617339292167e-06,
+                "fill_price": 1.614922878509,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "OP",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 1.617339292167e-06,
+                "fill_price": 1.615002743529,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "OP",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 1.617339292167e-06,
+                "fill_price": 1.615690900915,
+                "fees": 50.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "OP",
+                "timestamp": "2024-10-28 18:59:17",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 1.617339292167e-06,
+                "fill_price": 1.620215265284,
+                "fees": 319.5849117168184
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "OP",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 1.617339292167e-06,
+                "fill_price": 1.616978494758,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "OP",
+                "timestamp": "2024-10-28 18:59:18",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 1.617339292167e-06,
+                "fill_price": 1.616978494758,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "OP",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 1.617339292167e-06,
+                "fill_price": 1.616978494758,
+                "fees": 70.00000000000001
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 203525.5250397465,
+            "short": 20098.576951043797
+        }
+    },
+    {
+        "long": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 10503784.56862057,
+            "short": 11344799.237626836
+        }
+    },
+    {
+        "long": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 12115500.421393346,
+            "short": 11495282.676389728
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "GMX",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 2.3496790962587e-05,
+                "fill_price": 23.530558809772,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "GMX",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 2.3496790962587e-05,
+                "fill_price": 23.539935803643,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "GMX",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 2.3496790962587e-05,
+                "fill_price": 23.598339013564,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "GMX",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 2.3496790962587e-05,
+                "fill_price": 23.751952135471,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "GMX",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 2.3496790962587e-05,
+                "fill_price": 23.489939592101,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "GMX",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 2.3496790962587e-05,
+                "fill_price": 23.489939592101,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "GMX",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 2.3496790962587e-05,
+                "fill_price": 23.489939592101,
+                "fees": 67.5636729396917
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "GMX",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 500000,
+                "index_price": 2.3496790962587e-05,
+                "fill_price": 23.489939592101,
+                "fees": 347.56367293969174
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 1111757.7934853297,
+            "short": 1088271.9607219684
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "PEPE",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 9.160445e-12,
+                "fill_price": 9.169411e-06,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "PEPE",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 9.160445e-12,
+                "fill_price": 9.170038e-06,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "PEPE",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 9.160445e-12,
+                "fill_price": 9.176005e-06,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "PEPE",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 9.160445e-12,
+                "fill_price": 9.20646e-06,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "PEPE",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 9.160445e-12,
+                "fill_price": 9.156698e-06,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "PEPE",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 9.160445e-12,
+                "fill_price": 9.156698e-06,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "PEPE",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 9.160445e-12,
+                "fill_price": 9.156698e-06,
+                "fees": 50.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "PEPE",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 500000,
+                "index_price": 9.160445e-12,
+                "fill_price": 9.156698e-06,
+                "fees": 325.73799743094185
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 270292.51366691,
+            "short": 387034.2196691469
+        }
+    },
+    {
+        "long": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "WIF",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 100,
+                "index_price": 2.463169922434533e+18,
+                "fill_price": 2.464155288306415,
+                "fees": 0.07
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "WIF",
+                "timestamp": "2024-10-28 18:59:19",
+                "side": "Long",
+                "trade_size": 10000,
+                "index_price": 2.463169922434533e+18,
+                "fill_price": 2.464302995800145,
+                "fees": 7.000000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "WIF",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Long",
+                "trade_size": 100000,
+                "index_price": 2.463169922434533e+18,
+                "fill_price": 2.4657573618843127,
+                "fees": 70.00000000000001
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "WIF",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Long",
+                "trade_size": 500000,
+                "index_price": 2.463169922434533e+18,
+                "fill_price": 2.4735673310113575,
+                "fees": 350.00000000000006
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "short": [
+            {
+                "exchange": "GMXv2",
+                "symbol": "WIF",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 100,
+                "index_price": 2.463169922434533e+18,
+                "fill_price": 2.462635038838194,
+                "fees": 0.05
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "WIF",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 10000,
+                "index_price": 2.463169922434533e+18,
+                "fill_price": 2.462635038838194,
+                "fees": 5.0
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "WIF",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 100000,
+                "index_price": 2.463169922434533e+18,
+                "fill_price": 2.462635038838194,
+                "fees": 57.65390902502034
+            },
+            {
+                "exchange": "GMXv2",
+                "symbol": "WIF",
+                "timestamp": "2024-10-28 18:59:20",
+                "side": "Short",
+                "trade_size": 500000,
+                "index_price": 2.463169922434533e+18,
+                "fill_price": 2.462635038838194,
+                "fees": 337.65390902502037
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+        ],
+        "depth": {
+            "long": 486735.636400472,
+            "short": 529222.3953947282
+        }
+    }
+]
