@@ -3,6 +3,7 @@ from callers.masterCaller import MasterQuoter
 import json
 import time
 import threading
+from utils.logger import logger
 
 app = Flask(__name__)
 QUOTER = MasterQuoter()
@@ -24,6 +25,7 @@ def load_most_recent_quotes():
 
 @app.route('/health', methods=['GET'])
 def health_check():
+    logger.info('HEALTH ENDPOINT CALLED')
     return "OK", 200
 
 @app.route('/api/quotes/<string:symbol>', methods=['GET'])
