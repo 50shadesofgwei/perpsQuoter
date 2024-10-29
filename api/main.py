@@ -13,7 +13,7 @@ def start_hourly_runner():
         time.sleep(3600) 
 
 
-threading.Thread(target=start_hourly_runner, daemon=True).start()
+# threading.Thread(target=start_hourly_runner, daemon=True).start()
 
 def load_most_recent_quotes():
     try:
