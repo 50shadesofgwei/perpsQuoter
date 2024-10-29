@@ -22,6 +22,10 @@ def load_most_recent_quotes():
     except FileNotFoundError:
         return {}
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "running"}), 200
+
 @app.route('/api/quotes/<string:symbol>', methods=['GET'])
 def get_quotes(symbol: str):
     MOST_RECENT_QUOTES = load_most_recent_quotes()
