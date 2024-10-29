@@ -1,10 +1,13 @@
 from flask import Flask, jsonify, request
 from callers.masterCaller import MasterQuoter
 import json
+import time
 
 app = Flask(__name__)
+app.run(host='0.0.0.0', port=8080)
 QUOTER = MasterQuoter()
 QUOTER.hourly_runner()
+time.sleep(10)
 with open('most_recent_quotes.json', 'r') as f:
     MOST_RECENT_QUOTES = json.load(f)
 
